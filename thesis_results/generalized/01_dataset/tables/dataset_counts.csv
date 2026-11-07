@@ -1,0 +1,10 @@
+Quantity,Cases
+cases in the split registry,1000
+split role: test,82
+split role: train,857
+split role: unusable,61
+pair status: D2_recorded_D6_missing,5
+pair status: D6_recorded_D2_missing,34
+pair status: both_missing,14
+pair status: both_phase9_complete,412
+pair status: both_recorded_noncomplete,535

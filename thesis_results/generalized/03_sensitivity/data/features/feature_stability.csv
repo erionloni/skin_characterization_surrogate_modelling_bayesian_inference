@@ -1,0 +1,3 @@
+Feature,MinAbsDenominator,DenominatorChangesSign,TailShare,TailShareLimit,Unstable,Reason
+dropratio_D2,0.0268459815402196,1,0.970438972561671,0.5,1,the denominator changes sign over the sample; the 0.1 % of the values farthest from the mean carry 0.97 of the variance
+dropratio_D6,0.000158937944306103,1,0.99944133911438,0.5,1,the denominator changes sign over the sample; the 0.1 % of the values farthest from the mean carry 0.999 of the variance

@@ -1,0 +1,7 @@
+Design,MeanQInformation,MeanQInformation_certified_only,MeanFullInformation,MeanFullInformation_certified_only,MeanDUtility,MeanDUtility_certified_only,MeanNormalizedPosteriorSD,MeanNormalizedPosteriorSD_certified_only,MeanContractionAmount,MeanContractionAmount_certified_only,MeanCoverage95,MeanCoverage95_certified_only,MatchedCaseCount,MatchedCaseCount_certified_only,AnalysisStatus,AnalysisStatus_certified_only,RankByQInformation,RankByQInformation_certified_only,MeanNumericalRank,MeanNumericalRank_certified_only
+all_six,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,0,0,unavailable_zero_matched_cases,unavailable_zero_matched_cases,NaN,NaN,NaN,NaN
+d2_only,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,0,0,unavailable_zero_matched_cases,unavailable_zero_matched_cases,NaN,NaN,NaN,NaN
+d6_only,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,0,0,unavailable_zero_matched_cases,unavailable_zero_matched_cases,NaN,NaN,NaN,NaN
+cycle_1_only,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,0,0,unavailable_zero_matched_cases,unavailable_zero_matched_cases,NaN,NaN,NaN,NaN
+ratios_only,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,0,0,unavailable_zero_matched_cases,unavailable_zero_matched_cases,NaN,NaN,NaN,NaN
+physics_guided_full_rank_six,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,0,0,unavailable_zero_matched_cases,unavailable_zero_matched_cases,NaN,NaN,NaN,NaN

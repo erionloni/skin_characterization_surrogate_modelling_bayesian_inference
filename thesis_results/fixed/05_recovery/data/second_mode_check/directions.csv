@@ -1,0 +1,10 @@
+Scenario,Design,DirectionRank,DirectionLabel,Eigenvalue,AngleDegrees,Source
+measurement_plus_gp,all_six,1,tightest_direction,0.00632718133543287,89.891864768094,shipped
+measurement_plus_gp,all_six,2,intermediate_direction_1,0.149790528337125,85.9702364985819,shipped
+measurement_plus_gp,all_six,3,intermediate_direction_2,0.949435414648183,12.7669694336603,shipped
+measurement_plus_gp,all_six,4,sloppiest_direction,1.16966990591338,77.9065836299083,shipped
+measurement_plus_gp,all_six,NaN,sloppy_2d_subspace,NaN,4.03121889219444,shipped
+measurement_plus_gp,all_six,NaN,weak_pair_best_combination,0.679388884226502,71.5800089536639,shipped
+measurement_plus_gp,all_six,NaN,weak_pair_worst_combination,0.982853806225831,18.8085416899542,shipped
+measurement_plus_gp,all_six,NaN,weak_pair_plane,NaN,3.67245960505184,shipped
+measurement_plus_gp,all_six,NaN,weak_pair_worst_combination_in_plane,0.982853806225831,18.4592605811601,shipped

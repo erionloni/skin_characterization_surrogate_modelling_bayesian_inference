@@ -1,0 +1,203 @@
+{
+  "schema_version": "real_extended_stage9b_screening_configuration_v1",
+  "execution_scope": "consume_only_post_s03",
+  "complete_scientific_design": true,
+  "candidate_registry": {
+    "schema_version": "stage9b_candidate_registry_metadata_v1",
+    "regular_grid_count": 729,
+    "default_rows_requested": 1,
+    "duplicates_removed": 0,
+    "unique_candidate_count": 730,
+    "duplicate_tolerance": 1E-12,
+    "candidate_id_policy": "P_and_registry_index_default_named_default",
+    "candidate_index_policy": "stable_registry_order_never_rank",
+    "log10_abs_rate_levels": [
+      -0.69897000433601875,
+      -0.57397000433601875,
+      -0.44897000433601875,
+      -0.32397000433601875,
+      -0.19897000433601875,
+      -0.073970004336018746,
+      0.051029995663981254,
+      0.17602999566398125,
+      0.3010299956639812
+    ],
+    "rate_magnitude_levels": [
+      0.2,
+      0.26670428643266486,
+      0.35565588200778464,
+      0.47427474113233109,
+      0.632455532033676,
+      0.84339300685716467,
+      1.1246826503806984,
+      1.4997884186649117,
+      2
+    ],
+    "hold_levels_s": [
+      10,
+      14.375,
+      18.75,
+      23.125,
+      27.5,
+      31.875,
+      36.25,
+      40.625,
+      45
+    ],
+    "pause_levels_s": [
+      5,
+      7.5,
+      10,
+      12.5,
+      15,
+      17.5,
+      20,
+      22.5,
+      25
+    ],
+    "rate_boundary_count": 162,
+    "hold_boundary_count": 162,
+    "pause_boundary_count": 162,
+    "any_boundary_count": 386
+  },
+  "material_lhs": {
+    "schema_version": "stage9b_material_lhs_metadata_v1",
+    "seed": 2.0260519E+7,
+    "rng_algorithm": "twister",
+    "implementation": "utils.dispersed_initial_ensemble_latin_hypercube",
+    "parameter_names": [
+      "m3_f_RD",
+      "m3_e_RD",
+      "log10_k0_RD",
+      "Thickness_RD"
+    ],
+    "bounds": [
+      [
+        50,
+        300
+      ],
+      [
+        0,
+        1000
+      ],
+      [
+        -2.3010299956639813,
+        -1.3010299956639813
+      ],
+      [
+        1,
+        2.5
+      ]
+    ],
+    "prior_mean": [
+      175,
+      500,
+      -1.8010299956639813,
+      1.75
+    ],
+    "prior_sd": [
+      72.168783648703226,
+      288.6751345948129,
+      0.28867513459481292,
+      0.43301270189221935
+    ],
+    "prior_covariance_z": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "row_count": 1000,
+    "unique_row_count": 1000,
+    "rng_state_restored_by_oncleanup": true
+  },
+  "screening_policy": {
+    "schemaVersion": "real_extended_stage9b_screening_policy_v1",
+    "enabled": true,
+    "observationDesign": "all_six",
+    "materialParameterNames": [
+      "m3_f_RD",
+      "m3_e_RD",
+      "log10_k0_RD",
+      "Thickness_RD"
+    ],
+    "protocolParameterNames": [
+      "log10_abs_suction_rate",
+      "hold_dur_s",
+      "pause_dur_s"
+    ],
+    "targetParameterNames": [
+      "m3_e_RD",
+      "log10_k0_RD"
+    ],
+    "targetParameterOrder": [
+      "m3_e_RD",
+      "log10_k0_RD"
+    ],
+    "protocolLevelCount": 9,
+    "protocolBounds": [
+      [
+        -0.69897000433601875,
+        0.3010299956639812
+      ],
+      [
+        10,
+        45
+      ],
+      [
+        5,
+        25
+      ]
+    ],
+    "defaultProtocol": {
+      "suction_rate_kPa_s": -0.4,
+      "log10_abs_suction_rate": -0.3979400086720376,
+      "hold_dur_s": 30,
+      "pause_dur_s": 12
+    },
+    "candidateDuplicateTolerance": 1E-12,
+    "materialPointCount": 1000,
+    "materialLHSSeed": 2.0260519E+7,
+    "materialLHSImplementation": "utils.dispersed_initial_ensemble_latin_hypercube",
+    "materialCoordinateSystem": "independent_uniform_prior_sd",
+    "finiteDifferenceStepUnitBox": 0.001,
+    "finiteDifferenceCoordinateSystem": "normalized_unit_box",
+    "finiteDifferenceMode": "primary_step_only_batched_boundary_safe",
+    "jacobianCoordinateSystem": "independent_uniform_prior_sd",
+    "covarianceCases": [
+      "measurement_covariance",
+      "operational_measurement_plus_emulator"
+    ],
+    "localInformationDefinition": "local_mean_sensitivity_FIM_approximation",
+    "covarianceProxyDefinition": "inv(I4_plus_F)_via_cholesky_solves",
+    "primaryMetric": "MeanTargetProxyLambdaMax",
+    "comparisonTolerance": 1E-12,
+    "symmetryTolerance": 1E-10,
+    "psdTolerance": 1E-10,
+    "candidateBatchSize": 5,
+    "automaticScientificSelection": false,
+    "confirmationActionImplemented": true
+  },
+  "automatic_scientific_selection": false,
+  "confirmation_action_implemented": true
+}

@@ -1,0 +1,7 @@
+PairIndex,MaterialCaseID,DefaultCertified,SelectedCertified,IncludedInPairedSummary,ContainsFallback,ExclusionReason,DefaultProtocol,SelectedProtocol,ComparisonRole
+61,232,1,1,1,0,,default,joint_focused,selected_joint
+62,215,1,1,1,0,,default,joint_focused,selected_joint
+63,113,1,1,1,0,,default,permeability_focused,selected_permeability
+64,232,1,1,1,0,,default,permeability_focused,selected_permeability
+65,215,1,1,1,0,,default,permeability_focused,selected_permeability
+66,232,1,1,1,0,,default,dissipation_focused,selected_dissipation

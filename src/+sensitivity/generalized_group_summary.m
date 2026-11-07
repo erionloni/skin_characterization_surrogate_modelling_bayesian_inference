@@ -1,0 +1,66 @@
+function G = generalized_group_summary(Sfirst,Stotal,S2,inputNames,outputNames)
+%GENERALIZED_GROUP_SUMMARY Material and protocol shares of the generalized Sobol indices.
+%   G = sensitivity.generalized_group_summary(SFIRST, STOTAL, S2, INPUTNAMES,
+%   OUTPUTNAMES) sums, per output, the first-order indices of the four
+%   material and of the three protocol inputs, averages their total
+%   indices, splits the second-order indices into material-material,
+%   material-protocol (theta-phi) and protocol-protocol interactions, and
+%   returns the group table, the theta-phi interaction table and the
+%   per-protocol-input table. SFIRST, STOTAL: outputs-by-7; S2: the
+%   second-order indices with their input pairs.
+%   Side effects: none.
+
+    M=numel(inputNames);nOut=numel(outputNames);
+    assert(M==7&&isequal(size(Sfirst),[nOut M])&& ...
+        isequal(size(Stotal),[nOut M]), ...
+        'sensitivity:generalized_group_summary:Shape', ...
+        'The generalized route needs nOutput-by-7 Sobol matrices (seven inputs).');
+    assert(isequal(S2.pairs,nchoosek(1:M,2)) || ...
+        size(S2.pairs,2)==2, ...
+        'sensitivity:generalized_group_summary:Pairs', ...
+        'Second-order pair metadata is invalid.');
+    material=1:4;protocol=5:7;
+    materialFirst=sum(Sfirst(:,material),2);
+    protocolFirst=sum(Sfirst(:,protocol),2);
+    materialTotalMean=mean(Stotal(:,material),2);
+    protocolTotalMean=mean(Stotal(:,protocol),2);
+    materialProtocol=zeros(nOut,1);
+    materialMaterial=zeros(nOut,1);
+    protocolProtocol=zeros(nOut,1);
+    thetaPhi=table();
+    for q=1:size(S2.pairs,1)
+        a=S2.pairs(q,1);b=S2.pairs(q,2);
+        if ismember(a,material)&&ismember(b,protocol)
+            materialProtocol=materialProtocol+S2.indices(:,q);
+            for o=1:nOut
+                thetaPhi=[thetaPhi;table(string(outputNames{o}), ...
+                    string(inputNames{a}),string(inputNames{b}),S2.indices(o,q), ...
+                    'VariableNames',{'output','material_input','protocol_input', ...
+                    'second_order_index'})]; %#ok<AGROW>
+            end
+        elseif ismember(a,material)&&ismember(b,material)
+            materialMaterial=materialMaterial+S2.indices(:,q);
+        elseif ismember(a,protocol)&&ismember(b,protocol)
+            protocolProtocol=protocolProtocol+S2.indices(:,q);
+        end
+    end
+    group=table(string(outputNames(:)),materialFirst,protocolFirst, ...
+        materialTotalMean,protocolTotalMean,materialMaterial,protocolProtocol, ...
+        materialProtocol,max(Stotal-Sfirst,[],2), ...
+        'VariableNames',{'output','material_first_order_sum', ...
+        'protocol_first_order_sum','mean_material_total_order', ...
+        'mean_protocol_total_order','material_material_second_order_sum', ...
+        'protocol_protocol_second_order_sum', ...
+        'material_protocol_second_order_sum','maximum_interaction_gap'});
+    protocolTable=table();
+    for o=1:nOut
+        for j=protocol
+            protocolTable=[protocolTable;table(string(outputNames{o}), ...
+                string(inputNames{j}),Sfirst(o,j),Stotal(o,j), ...
+                Stotal(o,j)-Sfirst(o,j), ...
+                'VariableNames',{'output','protocol_input','first_order', ...
+                'total_order','interaction_gap'})]; %#ok<AGROW>
+        end
+    end
+    G=struct('group',group,'theta_phi',thetaPhi,'protocol',protocolTable);
+end

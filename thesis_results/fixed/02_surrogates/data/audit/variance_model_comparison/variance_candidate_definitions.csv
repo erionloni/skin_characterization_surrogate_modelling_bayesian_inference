@@ -1,0 +1,5 @@
+CandidateOrder,Candidate,Formula,GammaPolicy,ScalePolicy,CrossFitted,LocalShapeRequired,Available,UnavailableReason,ProductionModel,AutomaticSelection
+1,raw_uqlab,v=GPVariance,"not_applicable",none,0,0,1,,0,0
+2,constant_oof,v=s_j^2,"gamma=0",CaseID-balanced mean of residual_squared/local_shape_power,1,0,1,,0,0
+3,full_local_shape,v=tau_j^2*h,"gamma=1",CaseID-balanced mean of residual_squared/local_shape_power,1,1,1,,0,0
+4,tempered_local_shape,v=tau_j^2*h^gamma,"shared gamma on fixed grid [0,1]",CaseID-balanced mean of residual_squared/local_shape_power,1,1,1,,0,0

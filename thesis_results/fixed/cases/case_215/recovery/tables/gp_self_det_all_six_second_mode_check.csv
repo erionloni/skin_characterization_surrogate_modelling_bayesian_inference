@@ -1,0 +1,65 @@
+Part,Quantity,Value,Unit
+class,"class (the rule of settings A.7, fixed in advance)","NEAR-EQUIVALENT SOLUTION",
+cell,"state of the cell","certified, 2000 steps",
+a) walker groups,"group 1, replicate 1: walkers","30",
+a) walker groups,"group 1, replicate 1: distance of its median point from the truth","1.54e-09",prior widths
+a) walker groups,"group 1, replicate 1: log-likelihood median and maximum","75.7351, 77.3671",
+a) walker groups,"group 1, replicate 2: walkers","30",
+a) walker groups,"group 1, replicate 2: distance of its median point from the truth","3.418e-09",prior widths
+a) walker groups,"group 1, replicate 2: log-likelihood median and maximum","75.6817, 77.3595",
+a) walker groups,"group 1, replicate both: walkers","60",
+a) walker groups,"group 1, replicate both: distance of its median point from the truth","2.758e-09",prior widths
+a) walker groups,"group 1, replicate both: log-likelihood median and maximum","75.7058, 77.3671",
+a) walker groups,"group 2, replicate 1: walkers","10",
+a) walker groups,"group 2, replicate 1: distance of its median point from the truth","0.2781",prior widths
+a) walker groups,"group 2, replicate 1: log-likelihood median and maximum","-1.17847e+12, -1.17847e+12",
+a) walker groups,"group 2, replicate 2: walkers","10",
+a) walker groups,"group 2, replicate 2: distance of its median point from the truth","0.2781",prior widths
+a) walker groups,"group 2, replicate 2: log-likelihood median and maximum","-1.17847e+12, -1.17847e+12",
+a) walker groups,"group 2, replicate both: walkers","20",
+a) walker groups,"group 2, replicate both: distance of its median point from the truth","0.2781",prior widths
+a) walker groups,"group 2, replicate both: log-likelihood median and maximum","-1.17847e+12, -1.17847e+12",
+a) walker groups,"B (the median point of group 2)","165.043, 665.013, -1.7324, 1.02421",model coordinates
+a) walker groups,"the truth","168.258, 464.19, -2.01053, 1.05102",model coordinates
+b) fit,"distance of B from the truth","0.2781",prior widths
+b) fit,"log-likelihood at the truth","77.3794",
+b) fit,"log-likelihood at B","-1.17847e+12",
+b) fit,"log-likelihood at B minus at the truth","-1.17847e+12",
+b) fit,"residuals at truth (pcl1_D2_mbar, pcl2_D2_mbar, pcl3_D2_mbar, pcl1_D6_mbar, pcl2_D6_mbar, pcl3_D6_mbar)","2.608e-10, -3.979e-13, 3.547e-11, -3.473e-11, -2.274e-13, 6.72e-11",mbar
+b) fit,"residuals at B (pcl1_D2_mbar, pcl2_D2_mbar, pcl3_D2_mbar, pcl1_D6_mbar, pcl2_D6_mbar, pcl3_D6_mbar)","-0.104, 0.07023, 0.1013, 0.923, -1.209, -0.1336",mbar
+b) fit,"residuals at refined from B (pcl1_D2_mbar, pcl2_D2_mbar, pcl3_D2_mbar, pcl1_D6_mbar, pcl2_D6_mbar, pcl3_D6_mbar)","-0.1039, 0.07032, 0.1012, 0.9229, -1.209, -0.1337",mbar
+b) fit,"residuals at refined from truth (pcl1_D2_mbar, pcl2_D2_mbar, pcl3_D2_mbar, pcl1_D6_mbar, pcl2_D6_mbar, pcl3_D6_mbar)","2.608e-10, -3.979e-13, 3.547e-11, -3.473e-11, -2.274e-13, 6.72e-11",mbar
+c) refinement,"from B: distance of the end point from the truth","0.2781",prior widths
+c) refinement,"from B: distance of the end point from B","3.553e-06",prior widths
+c) refinement,"from B: log-likelihood at the end point","-1.17847e+12",
+c) refinement,"from the truth (control): distance of the end point from the truth","0",prior widths
+c) refinement,"refined from B: exit flag, iterations, evaluations","2, 13, 363",
+c) refinement,"refined from truth: exit flag, iterations, evaluations","2, 1, 81",
+d) path,"highest negative log-likelihood on the line above the higher end","1.59341e+12",
+e) realistic noise,"delta at B, measurement plus gp noise","0.0361765",
+e) realistic noise,"delta at B, gp only noise","0.369136",
+e) realistic noise,"delta at refined from B, measurement plus gp noise","0.0361772",
+e) realistic noise,"delta at refined from B, gp only noise","0.369137",
+e) realistic noise,"measurement plus gp all six replicate 1: share of the draws near B / near the truth","0.001625 / 0.00335 (of 40000 draws, within 0.05)",prior widths
+e) realistic noise,"measurement plus gp all six replicate 2: share of the draws near B / near the truth","0.001775 / 0.002425 (of 40000 draws, within 0.05)",prior widths
+e) realistic noise,"gp only all six replicate 1: share of the draws near B / near the truth","0.02028 / 0.05922 (of 40000 draws, within 0.05)",prior widths
+e) realistic noise,"gp only all six replicate 2: share of the draws near B / near the truth","0.0137 / 0.06383 (of 40000 draws, within 0.05)",prior widths
+f) direction,"angle between truth -> B and the tightest direction (measurement plus gp all six, shipped)","89.89",degrees
+f) direction,"angle between truth -> B and the intermediate direction 1 (measurement plus gp all six, shipped)","85.97",degrees
+f) direction,"angle between truth -> B and the intermediate direction 2 (measurement plus gp all six, shipped)","12.77",degrees
+f) direction,"angle between truth -> B and the sloppiest direction (measurement plus gp all six, shipped)","77.91",degrees
+f) direction,"angle between truth -> B and the sloppy 2d subspace (measurement plus gp all six, shipped)","4.031",degrees
+f) direction,"angle between truth -> B and the weak pair best combination (measurement plus gp all six, shipped)","71.58",degrees
+f) direction,"angle between truth -> B and the weak pair worst combination (measurement plus gp all six, shipped)","18.81",degrees
+f) direction,"angle between truth -> B and the weak pair plane (measurement plus gp all six, shipped)","3.672",degrees
+f) direction,"angle between truth -> B and the weak pair worst combination in plane (measurement plus gp all six, shipped)","18.46",degrees
+g) COMSOL cases,"rank 1: case 373 (development), pressure distance / parameter distance","0.3121 / 0.546 (3 outputs)",measurement CVs / prior widths
+g) COMSOL cases,"rank 2: case 205 (external), pressure distance / parameter distance","0.353 / 0.2832 (6 outputs)",measurement CVs / prior widths
+g) COMSOL cases,"rank 3: case 70 (development), pressure distance / parameter distance","0.3712 / 0.5002 (6 outputs)",measurement CVs / prior widths
+g) COMSOL cases,"rank 4: case 362 (development), pressure distance / parameter distance","0.4043 / 0.4975 (4 outputs)",measurement CVs / prior widths
+g) COMSOL cases,"rank 5: case 409 (development), pressure distance / parameter distance","0.4149 / 0.6207 (6 outputs)",measurement CVs / prior widths
+g) COMSOL cases,"rank 6: case 322 (development), pressure distance / parameter distance","0.4705 / 0.5 (3 outputs)",measurement CVs / prior widths
+g) COMSOL cases,"rank 7: case 264 (development), pressure distance / parameter distance","0.4715 / 0.4952 (3 outputs)",measurement CVs / prior widths
+g) COMSOL cases,"rank 8: case 269 (development), pressure distance / parameter distance","0.4802 / 0.2166 (3 outputs)",measurement CVs / prior widths
+g) COMSOL cases,"rank 9: case 156 (development), pressure distance / parameter distance","0.4915 / 0.9464 (3 outputs)",measurement CVs / prior widths
+g) COMSOL cases,"rank 10: case 111 (external), pressure distance / parameter distance","0.506 / 0.2904 (6 outputs)",measurement CVs / prior widths

@@ -1,0 +1,229 @@
+{
+  "schema_version": "real_extended_confirmation_configuration_v4",
+  "route": "real_extended",
+  "materials": [
+    131,
+    113,
+    230,
+    232,
+    42,
+    93,
+    172,
+    12,
+    119,
+    220,
+    206,
+    48,
+    96,
+    215,
+    83,
+    146,
+    166,
+    246,
+    249,
+    116
+  ],
+  "protocols": [
+    {
+      "ProtocolIndex": 1,
+      "Protocol": "default",
+      "ProtocolRole": "default",
+      "ObjectiveID": "",
+      "ComparisonRole": "",
+      "SignedRate_kPa_s": -0.4,
+      "RateMagnitude_kPa_s": 0.4,
+      "Log10AbsRate": -0.3979400086720376,
+      "Hold_s": 30,
+      "Pause_s": 12
+    },
+    {
+      "ProtocolIndex": 2,
+      "Protocol": "joint_focused",
+      "ProtocolRole": "selected",
+      "ObjectiveID": "joint_weak",
+      "ComparisonRole": "selected_joint",
+      "SignedRate_kPa_s": -2,
+      "RateMagnitude_kPa_s": 2,
+      "Log10AbsRate": 0.3010299956639812,
+      "Hold_s": 27.5,
+      "Pause_s": 15
+    },
+    {
+      "ProtocolIndex": 3,
+      "Protocol": "permeability_focused",
+      "ProtocolRole": "selected",
+      "ObjectiveID": "permeability",
+      "ComparisonRole": "selected_permeability",
+      "SignedRate_kPa_s": -1.4997884186649117,
+      "RateMagnitude_kPa_s": 1.4997884186649117,
+      "Log10AbsRate": 0.17602999566398123,
+      "Hold_s": 27.5,
+      "Pause_s": 15
+    },
+    {
+      "ProtocolIndex": 4,
+      "Protocol": "dissipation_focused",
+      "ProtocolRole": "selected",
+      "ObjectiveID": "dissipation",
+      "ComparisonRole": "selected_dissipation",
+      "SignedRate_kPa_s": -2,
+      "RateMagnitude_kPa_s": 2,
+      "Log10AbsRate": 0.3010299956639812,
+      "Hold_s": 40.625,
+      "Pause_s": 12.5
+    }
+  ],
+  "seed_rule": {
+    "base": 2.0E+9,
+    "design": 1.0E+6,
+    "case": 1000,
+    "protocol": 100,
+    "level": 10,
+    "replicate": 1
+  },
+  "parameter_names": [
+    "m3_f_RD",
+    "m3_e_RD",
+    "log10_k0_RD",
+    "Thickness_RD"
+  ],
+  "prior_bounds": [
+    [
+      50,
+      300
+    ],
+    [
+      0,
+      1000
+    ],
+    [
+      -2.3010299956639813,
+      -1.3010299956639813
+    ],
+    [
+      1,
+      2.5
+    ]
+  ],
+  "output_names": [
+    "pcl1_D2_mbar",
+    "pcl2_D2_mbar",
+    "pcl3_D2_mbar",
+    "pcl1_D6_mbar",
+    "pcl2_D6_mbar",
+    "pcl3_D6_mbar"
+  ],
+  "measurement_cv": 0.08,
+  "numerical_floor_sd": 1E-6,
+  "scenario": "measurement_plus_gp",
+  "design": "d2_only",
+  "complete_pairs_design": "all_six",
+  "cell_count": 89,
+  "planned_comparison_count": 60,
+  "complete_pairs_comparison_count": 6,
+  "policy": {
+    "schemaVersion": "real_extended_confirmation_policy_v3",
+    "materials": [
+      131,
+      113,
+      230,
+      232,
+      42,
+      93,
+      172,
+      12,
+      119,
+      220,
+      206,
+      48,
+      96,
+      215,
+      83,
+      146,
+      166,
+      246,
+      249,
+      116
+    ],
+    "protocols": [
+      "default",
+      "joint_focused",
+      "permeability_focused",
+      "dissipation_focused",
+      "",
+      "joint_weak",
+      "permeability",
+      "dissipation",
+      -0.4,
+      -2,
+      -1.4997884186649117,
+      -2,
+      30,
+      27.5,
+      27.5,
+      40.625,
+      12,
+      15,
+      15,
+      12.5
+    ],
+    "objectives": [
+      "joint_weak",
+      "permeability",
+      "dissipation"
+    ],
+    "scenario": "measurement_plus_gp",
+    "design": "d2_only",
+    "completePairsDesign": "all_six",
+    "protocolRoles": [
+      "default",
+      "selected"
+    ],
+    "targetParameterNames": [
+      "m3_e_RD",
+      "log10_k0_RD"
+    ],
+    "coordinateEqualityTolerance": 1E-12,
+    "posteriorReconstructionBatchSize": 5000
+  },
+  "aies_policy": {
+    "productionSampler": "AIES",
+    "productionReplicateIDs": [
+      1,
+      2
+    ],
+    "levels": [
+      2000,
+      5000
+    ],
+    "burnIn": 0.5,
+    "thinning": 1,
+    "initialization": "latin_hypercube",
+    "aies": {
+      "sampler": "AIES",
+      "n_chains": 40,
+      "samplerOptions": {
+        "a": 2
+      },
+      "initialization": "latin_hypercube"
+    },
+    "continuationSemantics": "fresh_total_length_rerun_new_seed_no_sample_pooling",
+    "adaptiveMetropolisEnabled": false,
+    "diagnosticThresholds": {
+      "maxRankSplitRhat": 1.05,
+      "minBulkESS": 400,
+      "minTailESS": 200,
+      "maxRelativeSdMCSE": 0.05,
+      "maxMedianRangeDifference": 0.03,
+      "maxQuantileRangeDifference": 0.05,
+      "maxNormalizedWasserstein": 0.05,
+      "correlationDifferenceWarning": 0.15,
+      "minIndependentReplicates": 2,
+      "frozenMovementFraction": 0.01,
+      "minimumUniqueStates": 2,
+      "duplicateSampleTolerance": 1E-12,
+      "maxDuplicateFraction": 0
+    },
+    "demonstrationSteps": []
+  }
+}

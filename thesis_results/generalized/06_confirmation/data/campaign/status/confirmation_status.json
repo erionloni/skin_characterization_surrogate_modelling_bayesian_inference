@@ -1,0 +1,39 @@
+{
+  "schema_version": "real_extended_confirmation_status_v6",
+  "status": "complete",
+  "protocols": [
+    "default",
+    "joint_focused",
+    "permeability_focused",
+    "dissipation_focused"
+  ],
+  "design": "d2_only",
+  "planned_cell_count": 80,
+  "material_count": 20,
+  "certified_cell_count": 73,
+  "unresolved_cell_count": 0,
+  "unavailable_cell_count_no_observation": 7,
+  "sampler_failure_cell_count": 0,
+  "aies_request_count": 170,
+  "successful_aies_request_count": 170,
+  "failed_aies_request_count": 0,
+  "adaptive_metropolis_request_count": 0,
+  "planned_comparison_count": 60,
+  "paired_comparison_count": 51,
+  "paired_certified_comparison_count": 51,
+  "paired_material_count": 19,
+  "paired_certified_material_count": 19,
+  "common_all_arms_certified_material_count": 13,
+  "complete_pairs": {
+    "design": "all_six",
+    "note": "the complete pairs only: descriptive, not representative of the protocols",
+    "cell_count": 9,
+    "certified_cell_count": 9,
+    "comparison_count": 6,
+    "paired_comparison_count": 6,
+    "paired_certified_comparison_count": 6
+  },
+  "posterior_samples_pooled": false,
+  "elapsed_seconds": 546.9928116,
+  "environment": "MATLAB 25.2.0.3177638 (R2025b) Update 5; UQLab 2.3.0"
+}

@@ -1,0 +1,22 @@
+{
+  "cellCount": 89,
+  "designs": [
+    "d2_only",
+    "all_six"
+  ],
+  "plannedComparisonCount": 60,
+  "completePairsComparisonCount": 6,
+  "materialCount": 20,
+  "protocols": [
+    "default",
+    "joint_focused",
+    "permeability_focused",
+    "dissipation_focused"
+  ],
+  "requestSeedCount": 356,
+  "taskTable": "cell_grid/confirmation_task_table.csv",
+  "seedSchedule": "cell_grid/confirmation_seed_schedule.csv",
+  "demonstrationSteps": [],
+  "environment": "MATLAB 25.2.0.3177638 (R2025b) Update 5; UQLab 2.3.0",
+  "preparedUTC": "2026-10-03T16:56:18Z"
+}

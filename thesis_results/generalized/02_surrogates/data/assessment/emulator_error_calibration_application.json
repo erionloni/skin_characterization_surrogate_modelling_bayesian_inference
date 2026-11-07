@@ -1,0 +1,37 @@
+{
+  "schema_version": "real_extended_calibration_application_v1",
+  "route": "real_extended",
+  "status": "complete",
+  "variance_formula_version": "tempered_local_diagonal_v1",
+  "shared_gamma": 0.48225,
+  "tau_squared_mbar2": [
+    116.96477594813766,
+    148.56913547803234,
+    117.76952987928276,
+    101.13256316793056,
+    97.46247135306912,
+    47.536948601501123
+  ],
+  "process_variance_mbar2": [
+    34271.240411359475,
+    91805.899274136813,
+    2415.73190643013,
+    135930.83481947557,
+    229426.64380209288,
+    107991.21526632241
+  ],
+  "output_order": [
+    "pcl1_D2_mbar",
+    "pcl2_D2_mbar",
+    "pcl3_D2_mbar",
+    "pcl1_D6_mbar",
+    "pcl2_D6_mbar",
+    "pcl3_D6_mbar"
+  ],
+  "maximum_factorization_absolute_error": 4.5474735088646412E-13,
+  "factorization_relative_tolerance": 1E-12,
+  "raw_covariance_diagonal": true,
+  "cross_output_residual_correlation_applied": false,
+  "internal_heldout_used_for_calibration": false,
+  "fixed_reference_used_for_calibration": false
+}

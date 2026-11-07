@@ -1,0 +1,121 @@
+Aggregate,Design,Quantity,Published,N,WithoutTheCells,NWithout
+gp_only_matched_designs_posterior_width_ratio,all_six,"mean posterior SD ratio, m3_f_RD",0.174398266167051,20,0.190004445541744,15
+gp_only_matched_designs_recovery_error,all_six,"mean normalized absolute recovery error, m3_f_RD",0.0397013505889196,20,0.0377226210576686,15
+gp_only_matched_designs_posterior_width_ratio,all_six,"mean posterior SD ratio, m3_e_RD",0.322554279893735,20,0.368875942956259,15
+gp_only_matched_designs_recovery_error,all_six,"mean normalized absolute recovery error, m3_e_RD",0.0648479382339742,20,0.0777114512266577,15
+gp_only_matched_designs_posterior_width_ratio,all_six,"mean posterior SD ratio, log10_k0_RD",0.590379539131226,20,0.612735968980877,15
+gp_only_matched_designs_recovery_error,all_six,"mean normalized absolute recovery error, log10_k0_RD",0.166464039961385,20,0.16457210305368,15
+gp_only_matched_designs_posterior_width_ratio,all_six,"mean posterior SD ratio, Thickness_RD",0.066298172612055,20,0.0576736603302033,15
+gp_only_matched_designs_recovery_error,all_six,"mean normalized absolute recovery error, Thickness_RD",0.0139138372609591,20,0.0110623520177721,15
+recovery_by_scenario_and_design,all_six,"mean posterior SD ratio (rows)",0.288407564451017,80,0.307322504452271,60
+recovery_by_scenario_and_design,all_six,"mean contraction (rows)",0.711592435548983,80,0.692677495547729,60
+recovery_by_scenario_and_design,all_six,"truth inclusion, central 50 % (rows)",0.475,80,0.5,60
+recovery_by_scenario_and_design,all_six,"truth inclusion, central 95 % (rows)",0.8875,80,0.916666666666667,60
+recovery_by_scenario_and_design,all_six,"mean over cases of the mean absolute recovery error",0.0712317915113095,20,0.0727671318389446,15
+gp_only_matched_designs_posterior_width_ratio,d2_only,"mean posterior SD ratio, m3_f_RD",0.493288368067765,20,0.483687243526518,15
+gp_only_matched_designs_recovery_error,d2_only,"mean normalized absolute recovery error, m3_f_RD",0.129032750750366,20,0.135879181931042,15
+gp_only_matched_designs_posterior_width_ratio,d2_only,"mean posterior SD ratio, m3_e_RD",0.594127706168169,20,0.594192987159288,15
+gp_only_matched_designs_recovery_error,d2_only,"mean normalized absolute recovery error, m3_e_RD",0.160808765380706,20,0.168408203577656,15
+gp_only_matched_designs_posterior_width_ratio,d2_only,"mean posterior SD ratio, log10_k0_RD",0.796787116427009,20,0.783175835888283,15
+gp_only_matched_designs_recovery_error,d2_only,"mean normalized absolute recovery error, log10_k0_RD",0.239859480070402,20,0.225418085178347,15
+gp_only_matched_designs_posterior_width_ratio,d2_only,"mean posterior SD ratio, Thickness_RD",0.905566383992278,20,0.896543352119615,15
+gp_only_matched_designs_recovery_error,d2_only,"mean normalized absolute recovery error, Thickness_RD",0.282785062057551,20,0.228178926807168,15
+recovery_by_scenario_and_design,d2_only,"mean posterior SD ratio (rows)",0.697442393663805,80,0.689399854673426,60
+recovery_by_scenario_and_design,d2_only,"mean contraction (rows)",0.302557606336195,80,0.310600145326574,60
+recovery_by_scenario_and_design,d2_only,"truth inclusion, central 50 % (rows)",0.3875,80,0.416666666666667,60
+recovery_by_scenario_and_design,d2_only,"truth inclusion, central 95 % (rows)",0.925,80,0.95,60
+recovery_by_scenario_and_design,d2_only,"mean over cases of the mean absolute recovery error",0.203121514564756,20,0.189471099373553,15
+gp_only_matched_designs_posterior_width_ratio,d6_only,"mean posterior SD ratio, m3_f_RD",0.862373363129052,20,0.926664272737584,15
+gp_only_matched_designs_recovery_error,d6_only,"mean normalized absolute recovery error, m3_f_RD",0.252847817798368,20,0.25224134821365,15
+gp_only_matched_designs_posterior_width_ratio,d6_only,"mean posterior SD ratio, m3_e_RD",0.638185686954732,20,0.696113280307323,15
+gp_only_matched_designs_recovery_error,d6_only,"mean normalized absolute recovery error, m3_e_RD",0.126088984348498,20,0.131326342667481,15
+gp_only_matched_designs_posterior_width_ratio,d6_only,"mean posterior SD ratio, log10_k0_RD",0.928708689781273,20,0.934823092906899,15
+gp_only_matched_designs_recovery_error,d6_only,"mean normalized absolute recovery error, log10_k0_RD",0.269237430278677,20,0.289997488268801,15
+gp_only_matched_designs_posterior_width_ratio,d6_only,"mean posterior SD ratio, Thickness_RD",0.358090236011641,20,0.363308455586727,15
+gp_only_matched_designs_recovery_error,d6_only,"mean normalized absolute recovery error, Thickness_RD",0.116045155888614,20,0.108134412772772,15
+recovery_by_scenario_and_design,d6_only,"mean posterior SD ratio (rows)",0.696839493969174,80,0.730227275384633,60
+recovery_by_scenario_and_design,d6_only,"mean contraction (rows)",0.303160506030826,80,0.269772724615367,60
+recovery_by_scenario_and_design,d6_only,"truth inclusion, central 50 % (rows)",0.4375,80,0.45,60
+recovery_by_scenario_and_design,d6_only,"truth inclusion, central 95 % (rows)",0.9,80,0.9,60
+recovery_by_scenario_and_design,d6_only,"mean over cases of the mean absolute recovery error",0.191054847078539,20,0.195424897980676,15
+gp_only_matched_designs_posterior_width_ratio,cycle_1_only,"mean posterior SD ratio, m3_f_RD",0.55872991532438,20,0.587815846913373,15
+gp_only_matched_designs_recovery_error,cycle_1_only,"mean normalized absolute recovery error, m3_f_RD",0.138610840378789,20,0.151993002737383,15
+gp_only_matched_designs_posterior_width_ratio,cycle_1_only,"mean posterior SD ratio, m3_e_RD",0.70501172481794,20,0.722779512687995,15
+gp_only_matched_designs_recovery_error,cycle_1_only,"mean normalized absolute recovery error, m3_e_RD",0.170022098169403,20,0.17250056418159,15
+gp_only_matched_designs_posterior_width_ratio,cycle_1_only,"mean posterior SD ratio, log10_k0_RD",0.881887005372535,20,0.883671400384879,15
+gp_only_matched_designs_recovery_error,cycle_1_only,"mean normalized absolute recovery error, log10_k0_RD",0.272809652273364,20,0.247995778717031,15
+gp_only_matched_designs_posterior_width_ratio,cycle_1_only,"mean posterior SD ratio, Thickness_RD",0.106874399347154,20,0.101187419616531,15
+gp_only_matched_designs_recovery_error,cycle_1_only,"mean normalized absolute recovery error, Thickness_RD",0.0205297391543097,20,0.0206307067036223,15
+recovery_by_scenario_and_design,cycle_1_only,"mean posterior SD ratio (rows)",0.563125761215502,80,0.573863544900694,60
+recovery_by_scenario_and_design,cycle_1_only,"mean contraction (rows)",0.436874238784498,80,0.426136455099306,60
+recovery_by_scenario_and_design,cycle_1_only,"truth inclusion, central 50 % (rows)",0.4875,80,0.466666666666667,60
+recovery_by_scenario_and_design,cycle_1_only,"truth inclusion, central 95 % (rows)",0.95,80,0.95,60
+recovery_by_scenario_and_design,cycle_1_only,"mean over cases of the mean absolute recovery error",0.150493082493967,20,0.148280013084907,15
+gp_only_matched_designs_posterior_width_ratio,ratios_only,"mean posterior SD ratio, m3_f_RD",0.94388780738945,20,0.934535793754631,15
+gp_only_matched_designs_recovery_error,ratios_only,"mean normalized absolute recovery error, m3_f_RD",0.22523960937212,20,0.226210342015223,15
+gp_only_matched_designs_posterior_width_ratio,ratios_only,"mean posterior SD ratio, m3_e_RD",0.650883374832571,20,0.582948616734669,15
+gp_only_matched_designs_recovery_error,ratios_only,"mean normalized absolute recovery error, m3_e_RD",0.113521205892864,20,0.116948600220034,15
+gp_only_matched_designs_posterior_width_ratio,ratios_only,"mean posterior SD ratio, log10_k0_RD",0.771136976205507,20,0.761904850451411,15
+gp_only_matched_designs_recovery_error,ratios_only,"mean normalized absolute recovery error, log10_k0_RD",0.229634727934194,20,0.206019190002974,15
+gp_only_matched_designs_posterior_width_ratio,ratios_only,"mean posterior SD ratio, Thickness_RD",0.564847165575031,20,0.45363917293477,15
+gp_only_matched_designs_recovery_error,ratios_only,"mean normalized absolute recovery error, Thickness_RD",0.0911650508645983,20,0.0752422151244846,15
+recovery_by_scenario_and_design,ratios_only,"mean posterior SD ratio (rows)",0.73268883100064,80,0.68325710846887,60
+recovery_by_scenario_and_design,ratios_only,"mean contraction (rows)",0.26731116899936,80,0.31674289153113,60
+recovery_by_scenario_and_design,ratios_only,"truth inclusion, central 50 % (rows)",0.475,80,0.483333333333333,60
+recovery_by_scenario_and_design,ratios_only,"truth inclusion, central 95 % (rows)",0.925,80,0.933333333333333,60
+recovery_by_scenario_and_design,ratios_only,"mean over cases of the mean absolute recovery error",0.164890148515944,20,0.156105086840679,15
+gp_only_matched_designs_posterior_width_ratio,physics_guided_full_rank_six,"mean posterior SD ratio, m3_f_RD",0.281081180968111,20,0.192563929598834,15
+gp_only_matched_designs_recovery_error,physics_guided_full_rank_six,"mean normalized absolute recovery error, m3_f_RD",0.0398101854721538,20,0.0377941266083057,15
+gp_only_matched_designs_posterior_width_ratio,physics_guided_full_rank_six,"mean posterior SD ratio, m3_e_RD",0.421388992639025,20,0.368339442863387,15
+gp_only_matched_designs_recovery_error,physics_guided_full_rank_six,"mean normalized absolute recovery error, m3_e_RD",0.0660235866763708,20,0.0784186145173997,15
+gp_only_matched_designs_posterior_width_ratio,physics_guided_full_rank_six,"mean posterior SD ratio, log10_k0_RD",0.644256105498577,20,0.607003968608447,15
+gp_only_matched_designs_recovery_error,physics_guided_full_rank_six,"mean normalized absolute recovery error, log10_k0_RD",0.164915925683012,20,0.159622033051995,15
+gp_only_matched_designs_posterior_width_ratio,physics_guided_full_rank_six,"mean posterior SD ratio, Thickness_RD",0.289781501435867,20,0.0579226705839344,15
+gp_only_matched_designs_recovery_error,physics_guided_full_rank_six,"mean normalized absolute recovery error, Thickness_RD",0.0143755140704581,20,0.0111445659446012,15
+recovery_by_scenario_and_design,physics_guided_full_rank_six,"mean posterior SD ratio (rows)",0.409126945135395,80,0.306457502913651,60
+recovery_by_scenario_and_design,physics_guided_full_rank_six,"mean contraction (rows)",0.590873054864605,80,0.693542497086349,60
+recovery_by_scenario_and_design,physics_guided_full_rank_six,"truth inclusion, central 50 % (rows)",0.4875,80,0.5,60
+recovery_by_scenario_and_design,physics_guided_full_rank_six,"truth inclusion, central 95 % (rows)",0.9125,80,0.916666666666667,60
+recovery_by_scenario_and_design,physics_guided_full_rank_six,"mean over cases of the mean absolute recovery error",0.0712813029754986,20,0.0717448350305755,15
+gp_only_design_ranking,all_six,"mean information on the weak pair [nats]",2.0901169596958,20,1.93362330975727,15
+gp_only_design_ranking,all_six,"mean information on all four parameters [nats]",8.52517518910418,20,8.28578335864878,15
+gp_only_design_ranking,all_six,"mean D-utility",28.2054546460412,20,27.5780899486033,15
+gp_only_design_ranking,all_six,"mean posterior SD ratio",0.288407564451017,20,0.307322504452271,15
+gp_only_design_ranking,all_six,"mean contraction",0.711592435548983,20,0.692677495547729,15
+gp_only_design_ranking,all_six,"truth inclusion, central 95 %",0.8875,20,0.916666666666667,15
+gp_only_design_ranking,d2_only,"mean information on the weak pair [nats]",1.07417712416697,20,1.11974817931479,15
+gp_only_design_ranking,d2_only,"mean information on all four parameters [nats]",3.27548885800244,20,3.3542835211222,15
+gp_only_design_ranking,d2_only,"mean D-utility",20.08390369479,20,19.7889327178197,15
+gp_only_design_ranking,d2_only,"mean posterior SD ratio",0.697442393663806,20,0.689399854673427,15
+gp_only_design_ranking,d2_only,"mean contraction",0.302557606336194,20,0.310600145326573,15
+gp_only_design_ranking,d2_only,"truth inclusion, central 95 %",0.925,20,0.95,15
+gp_only_design_ranking,d6_only,"mean information on the weak pair [nats]",0.579871258842845,20,0.457646873400562,15
+gp_only_design_ranking,d6_only,"mean information on all four parameters [nats]",3.60643223551136,20,3.3028094795104,15
+gp_only_design_ranking,d6_only,"mean D-utility",21.2984532594215,20,20.6822441317319,15
+gp_only_design_ranking,d6_only,"mean posterior SD ratio",0.696839493969174,20,0.730227275384633,15
+gp_only_design_ranking,d6_only,"mean contraction",0.303160506030825,20,0.269772724615367,15
+gp_only_design_ranking,d6_only,"truth inclusion, central 95 %",0.9,20,0.9,15
+gp_only_design_ranking,cycle_1_only,"mean information on the weak pair [nats]",0.66600792137821,20,0.646862708374831,15
+gp_only_design_ranking,cycle_1_only,"mean information on all four parameters [nats]",6.06089068237002,20,5.99046016766043,15
+gp_only_design_ranking,cycle_1_only,"mean D-utility",22.4075603996233,20,22.2396935800762,15
+gp_only_design_ranking,cycle_1_only,"mean posterior SD ratio",0.563125761215502,20,0.573863544900694,15
+gp_only_design_ranking,cycle_1_only,"mean contraction",0.436874238784498,20,0.426136455099306,15
+gp_only_design_ranking,cycle_1_only,"truth inclusion, central 95 %",0.95,20,0.95,15
+gp_only_design_ranking,ratios_only,"mean information on the weak pair [nats]",1.04413541323639,20,1.14358577182726,15
+gp_only_design_ranking,ratios_only,"mean information on all four parameters [nats]",2.26321881497668,20,2.39698410251803,15
+gp_only_design_ranking,ratios_only,"mean D-utility",18.6767368374668,20,18.1058418099503,15
+gp_only_design_ranking,ratios_only,"mean posterior SD ratio",0.73268883100064,20,0.683257108468871,15
+gp_only_design_ranking,ratios_only,"mean contraction",0.26731116899936,20,0.316742891531129,15
+gp_only_design_ranking,ratios_only,"truth inclusion, central 95 %",0.925,20,0.933333333333333,15
+gp_only_design_ranking,physics_guided_full_rank_six,"mean information on the weak pair [nats]",1.80972980478926,20,1.92992451470368,15
+gp_only_design_ranking,physics_guided_full_rank_six,"mean information on all four parameters [nats]",7.43402484621474,20,8.29112533707244,15
+gp_only_design_ranking,physics_guided_full_rank_six,"mean D-utility",28.1751111921862,20,27.5532382788498,15
+gp_only_design_ranking,physics_guided_full_rank_six,"mean posterior SD ratio",0.409126945135395,20,0.306457502913651,15
+gp_only_design_ranking,physics_guided_full_rank_six,"mean contraction",0.590873054864605,20,0.693542497086349,15
+gp_only_design_ranking,physics_guided_full_rank_six,"truth inclusion, central 95 %",0.9125,20,0.916666666666667,15
+gp_only_design_ranking,all_six,"rank by the information on the weak pair",1,20,1,15
+gp_only_design_ranking,d2_only,"rank by the information on the weak pair",3,20,4,15
+gp_only_design_ranking,d6_only,"rank by the information on the weak pair",6,20,6,15
+gp_only_design_ranking,cycle_1_only,"rank by the information on the weak pair",5,20,5,15
+gp_only_design_ranking,ratios_only,"rank by the information on the weak pair",4,20,3,15
+gp_only_design_ranking,physics_guided_full_rank_six,"rank by the information on the weak pair",2,20,2,15

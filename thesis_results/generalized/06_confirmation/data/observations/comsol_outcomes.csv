@@ -1,0 +1,9 @@
+Protocol,Probe,Solves,Completed,EarlyStop,EarlyStopPhase,NonlinearFailure,NotRun,Other,OtherStatus
+default,D2,20,19,0,,1,0,0,
+joint_focused,D2,20,19,0,,1,0,0,
+permeability_focused,D2,20,17,0,,3,0,0,
+dissipation_focused,D2,20,18,0,,2,0,0,
+default,D6,20,18,0,,2,0,0,
+joint_focused,D6,20,2,15,5,3,0,0,
+permeability_focused,D6,20,3,12,5,5,0,0,
+dissipation_focused,D6,20,1,14,5,5,0,0,

@@ -1,0 +1,77 @@
+{
+  "schema_version": "second_mode_check_v1",
+  "cell": {
+    "caseID": 215,
+    "scenario": "gp_self_det",
+    "design": "all_six",
+    "state": "certified",
+    "certified": true,
+    "stepCount": 2000
+  },
+  "class": "NEAR-EQUIVALENT SOLUTION",
+  "numbers": {
+    "B": [
+      165.04313747902009,
+      665.012796386005,
+      -1.7323964174225894,
+      1.0242130729204526
+    ],
+    "truth": [
+      168.257865952259,
+      464.189654568667,
+      -2.0105251953045782,
+      1.0510236843268
+    ],
+    "bDistanceFromTruth": 0.27812877788198875,
+    "logLikelihoodTruth": 77.379432111333216,
+    "logLikelihoodB": -1.1784673740418618E+12,
+    "refinedFromBDistanceFromTruth": 0.2781287234322779,
+    "refinedFromBDistanceFromB": 3.5530185951149207E-6,
+    "logLikelihoodRefinedFromB": -1.1784673438662859E+12,
+    "refinedFromTruthDistanceFromTruth": 0,
+    "pathBarrierAboveEnds": 1.5934125690692666E+12,
+    "deltaMeasurementPlusGPAtB": 0.036176536926086245,
+    "deltaGPOnlyAtB": 0.36913600928522083,
+    "deltaMeasurementPlusGPAtRefinedB": 0.036177217727327529,
+    "directionsSource": "shipped"
+  },
+  "rule": {
+    "exactDistance": 0.05,
+    "exactLogLikelihood": 2,
+    "nearDelta": 2
+  },
+  "settings": {
+    "caseID": 215,
+    "scenario": "gp_self_det",
+    "design": "all_six",
+    "groupDistance": 0.05,
+    "pathPoints": 201,
+    "neighbourhood": 0.05,
+    "shareScenarios": [
+      "measurement_plus_gp",
+      "gp_only"
+    ],
+    "directionScenario": "measurement_plus_gp",
+    "comsolNeighbours": 10,
+    "gpEvaluationBatchSize": 5000,
+    "optimizer": {
+      "algorithm": "sqp",
+      "optimalityTolerance": 1E-10,
+      "stepTolerance": 1E-12,
+      "maxIterations": 500,
+      "maxFunctionEvaluations": 5000
+    }
+  },
+  "files": [
+    "walkers.csv",
+    "walker_groups.csv",
+    "points.csv",
+    "path.csv",
+    "realistic_noise.csv",
+    "draw_shares.csv",
+    "directions.csv",
+    "comsol_neighbours.csv"
+  ],
+  "mcmc_runs_performed": 0,
+  "status_changed": false
+}

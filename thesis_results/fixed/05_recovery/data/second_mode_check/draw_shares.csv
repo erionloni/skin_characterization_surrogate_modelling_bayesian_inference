@@ -1,0 +1,5 @@
+Scenario,Design,Replicate,State,DrawCount,ShareNearB,ShareNearTruth,Neighbourhood
+measurement_plus_gp,all_six,1,certified,40000,0.001625,0.00335,0.05
+measurement_plus_gp,all_six,2,certified,40000,0.001775,0.002425,0.05
+gp_only,all_six,1,certified,40000,0.020275,0.059225,0.05
+gp_only,all_six,2,certified,40000,0.0137,0.063825,0.05

@@ -1,0 +1,76 @@
+function [artifact,status] = load_certified_posterior(cfg,cellRecord)
+%LOAD_CERTIFIED_POSTERIOR The certified provider of one inversion cell, or none.
+%   [ARTIFACT,STATUS] = inversion.load_certified_posterior(CFG,CELLRECORD)
+%   reads the cell's certification pointer (certified_posterior.json,
+%   inversion.save_certified_posterior) and its provider request
+%   (inversion.load_posterior_artifact). Only a certification by the agreement
+%   of two independent AIES replicates, with the unpooled replicate 1 as
+%   provider, is consumed downstream.
+%   STATUS.state is 'unresolved' (no pointer: the cell is not certified or
+%   has not run), 'certified_loaded', or 'invalid_certification' (the pointer
+%   is not such a certification, or its provider did not load; the reason
+%   says why). ARTIFACT (certified only) is the provider's posterior record
+%   with truth, observation, the pointer (certification) and its path.
+%   The function does not throw.
+%   Side effects: none.
+
+    artifact=struct([]);
+    status=struct('state','unresolved','loaded',false,'certified',false, ...
+        'valid',false,'reason','no certified posterior is registered', ...
+        'errorIdentifier','','cellID','');
+    try
+        levels=reshape(double(cfg.mcmc.levels),1,[]);
+        cellPaths=inversion.posterior_artifact_paths( ...
+            cfg,cellRecord,'AIES',1,levels(1));
+        status.cellID=cellPaths.cellID;
+        certificationPath=cellPaths.certifiedPosteriorPath;
+        if ~isfile(certificationPath),return;end
+        certification=jsondecode(fileread(certificationPath));
+        required={'certified','downstreamUsePermitted','provider', ...
+            'certificationMechanism','samplesPooledAcrossSamplers', ...
+            'samplesPooledAcrossReplicates','reliabilityDecision'};
+        missing=required(~isfield(certification,required));
+        assert(isempty(missing),'inversion:load_certified_posterior:Certification', ...
+            'The certification pointer %s lacks: %s.',certificationPath, ...
+            strjoin(missing,', '));
+        provider=certification.provider;
+        assert(logical(certification.certified)&& ...
+            logical(certification.downstreamUsePermitted)&& ...
+            ~logical(certification.samplesPooledAcrossSamplers)&& ...
+            ~logical(certification.samplesPooledAcrossReplicates)&& ...
+            strcmp(char(string(certification.certificationMechanism)), ...
+                'CERTIFIED_AIES_REPLICATE_AGREEMENT')&& ...
+            strcmpi(char(string(provider.sampler)),'AIES')&& ...
+            double(provider.replicateID)==1, ...
+            'inversion:load_certified_posterior:Certification', ...
+            ['%s is not a certification by the agreement of two independent ' ...
+             'AIES replicates with the unpooled replicate 1 as provider.'], ...
+            certificationPath);
+        [providerArtifact,providerStatus]=inversion.load_posterior_artifact( ...
+            cfg,cellRecord,provider.sampler,provider.replicateID, ...
+            provider.stepCount);
+        assert(providerStatus.valid, ...
+            'inversion:load_certified_posterior:Provider', ...
+            'The certified provider of %s did not load: %s', ...
+            cellPaths.cellID,providerStatus.reason);
+
+        artifact=providerArtifact;
+        artifact.truth=providerArtifact.truthMetadata.truth;
+        artifact.observation=providerArtifact.observationMetadata.observation;
+        artifact.certification=certification;
+        artifact.certificationPath=certificationPath;
+        status.state='certified_loaded';
+        status.loaded=true;
+        status.certified=true;
+        status.valid=true;
+        status.reason='';
+    catch exception
+        artifact=struct([]);
+        status.state='invalid_certification';
+        status.loaded=false;
+        status.certified=false;
+        status.valid=false;
+        status.reason=exception.message;
+        status.errorIdentifier=exception.identifier;
+    end
+end

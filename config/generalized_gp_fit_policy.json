@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "generalized_gp_fit_policy_v1",
+  "kernel": "Matern-3_2",
+  "outputPolicies": [
+    {
+      "outputIndex": 1,
+      "maxIter": 100,
+      "seeds": [
+        124139720,
+        75699582,
+        256669894,
+        128978163,
+        97014333
+      ],
+      "selectionRule": "minimum_reevaluated_analytic_loo_mse_ordered_seed_tie_v1"
+    },
+    {
+      "outputIndex": 3,
+      "maxIter": 100,
+      "seeds": [
+        100591510,
+        130267131,
+        96554917,
+        63869678,
+        80715181
+      ],
+      "selectionRule": "minimum_reevaluated_analytic_loo_mse_ordered_seed_tie_v1"
+    }
+  ]
+}

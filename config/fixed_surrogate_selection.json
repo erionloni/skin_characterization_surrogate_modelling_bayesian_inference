@@ -1,0 +1,337 @@
+{
+  "schema_version": "routeR_final_fixed_surrogate_scientific_decision_v2_output6_medoid",
+  "decision_role": "manual_scientific_surrogate_and_calibration_freeze",
+  "route": "real",
+  "status": "materialized_from_human_decision_with_output6_optimizer_mode_resolved",
+  "manual_scientific_decision_completed": true,
+  "automatic_selection_used": false,
+  "created_utc": "2026-09-03T07:24:58Z",
+  "decision": {
+    "gp_kernel": "Matern-3_2",
+    "gp_trend": "ordinary",
+    "gp_correlation_type": "Ellipsoidal",
+    "gp_optimizer": "HGA",
+    "gp_nugget": 1E-10,
+    "gp_seed_policy": "canonical_component_policy_with_reviewed_output6_truth_free_medoid_override",
+    "emulator_error_model": "tempered_local_diagonal",
+    "variance_formula": "v_emu,j(theta)=tau_j^2*h_j(theta)^gamma",
+    "cross_output_emulator_covariance": "diagonal",
+    "pce_role": "unchanged_baseline_and_sensitivity_surrogate",
+    "output6_selected_seed": 2.21754153E+8,
+    "output6_selection_policy": "mean_and_local_h_surface_medoid_of_five_existing_same_data_matern32_fits_v1"
+  },
+  "point_estimate_policy": {
+    "calibration_method": "published_caseid_cluster_bootstrap_CentralEstimate",
+    "calibration_method_version": "surrogate_quality_calibration_settings_v1_and_caseid_cluster_bootstrap_v1",
+    "semantics": "arithmetic_mean_of_500_caseid_cluster_bootstrap_tempered_calibration_estimates",
+    "bootstrap_seed": 4.981166E+7,
+    "requested_replicates": 500,
+    "finite_replicates": 500,
+    "shared_gamma": 0.302,
+    "tau_squared_mbar2": [
+      26.1039698377566,
+      21.3557808404689,
+      28.7972761014777,
+      25.5913739124518,
+      22.6016959378646,
+      27.8149266828727
+    ]
+  },
+  "rationale": [
+    "Matern-3/2 had the best equal-output mean R2, RMSE, NRMSE, and MAE.",
+    "Matern-3/2 beat Matern-5/2 in all 30 paired output/repetition comparisons.",
+    "Matern-3/2 beat Gaussian in the clear majority of paired mean-accuracy comparisons.",
+    "Matern-3/2 tempered-local had calibrated nominal coverage and the best Matern-3/2 NLPD and CRPS.",
+    "The gamma evidence supports a nonzero but substantially tempered local shape.",
+    "Correlation did not improve joint NLPD for the selected Matern-3/2 tempered candidate, so diagonal covariance remains preferred.",
+    "PCE remains competitive but lacks the calibrated pointwise variance required by the primary inversion likelihood."
+  ],
+  "canonical_seed_review": {
+    "schemaVersion": "final_fixed_output6_saved_artifact_mode_review_v1",
+    "methodologicalRole": "truth_free_development_robustness_review",
+    "externalNumericalOutputsLoaded": false,
+    "probeCount": 512,
+    "canonical": {
+      "repeat": 0,
+      "fitSeed": 3.172951E+6,
+      "processVariance": 16889.897377140336,
+      "ardTheta": [
+        9.9928006981062261,
+        9.5615309177808836,
+        9.6183207494533889,
+        3.6022150784748352
+      ],
+      "optimizerObjective": 2.623855586910711,
+      "optimizerEvaluationCount": 537,
+      "optimizerIterationCount": 15,
+      "optimizerExitFlagGA": 1,
+      "optimizerExitFlagBFGS": 1,
+      "optimizerTerminationState": "{\"GA\":1,\"BFGS\":1}",
+      "optimizerTerminationAvailable": true,
+      "trainTimeSeconds": 2.4464186
+    },
+    "auditFits": [
+      {
+        "repeat": 1,
+        "fitSeed": 5.7358581E+7,
+        "processVariance": 109389.33027418,
+        "ardTheta": [
+          6.35829216842235,
+          9.98657766820462,
+          9.99029012118294,
+          9.27973403762755
+        ],
+        "optimizerObjective": 2.58170931089452,
+        "optimizerEvaluationCount": 446,
+        "optimizerIterationCount": 12,
+        "optimizerExitFlagGA": 1,
+        "optimizerExitFlagBFGS": 1,
+        "optimizerTerminationState": "{\"GA\":1,\"BFGS\":1}",
+        "optimizerTerminationAvailable": true,
+        "trainTimeSeconds": 4.5954986
+      },
+      {
+        "repeat": 2,
+        "fitSeed": 1.17229983E+8,
+        "processVariance": 32561.1186540004,
+        "ardTheta": [
+          6.35946888451011,
+          9.98642625070801,
+          9.99022234008913,
+          9.28103032398885
+        ],
+        "optimizerObjective": 2.58170997520054,
+        "optimizerEvaluationCount": 630,
+        "optimizerIterationCount": 19,
+        "optimizerExitFlagGA": 1,
+        "optimizerExitFlagBFGS": 1,
+        "optimizerTerminationState": "{\"GA\":1,\"BFGS\":1}",
+        "optimizerTerminationAvailable": true,
+        "trainTimeSeconds": 5.7661254
+      },
+      {
+        "repeat": 3,
+        "fitSeed": 4.7393421E+7,
+        "processVariance": 24449.3028524758,
+        "ardTheta": [
+          6.36139367240706,
+          9.98652135060022,
+          9.99042250191785,
+          9.27800321965574
+        ],
+        "optimizerObjective": 2.58170904384776,
+        "optimizerEvaluationCount": 368,
+        "optimizerIterationCount": 9,
+        "optimizerExitFlagGA": 1,
+        "optimizerExitFlagBFGS": 1,
+        "optimizerTerminationState": "{\"GA\":1,\"BFGS\":1}",
+        "optimizerTerminationAvailable": true,
+        "trainTimeSeconds": 3.3033422
+      },
+      {
+        "repeat": 4,
+        "fitSeed": 2.57608533E+8,
+        "processVariance": 53219.1926610467,
+        "ardTheta": [
+          6.35912786551724,
+          9.98632241703727,
+          9.99019250101708,
+          9.27736297996377
+        ],
+        "optimizerObjective": 2.58171055745784,
+        "optimizerEvaluationCount": 648,
+        "optimizerIterationCount": 19,
+        "optimizerExitFlagGA": 1,
+        "optimizerExitFlagBFGS": 1,
+        "optimizerTerminationState": "{\"GA\":1,\"BFGS\":1}",
+        "optimizerTerminationAvailable": true,
+        "trainTimeSeconds": 5.9959111
+      },
+      {
+        "repeat": 5,
+        "fitSeed": 2.21754153E+8,
+        "processVariance": 57485.3173336901,
+        "ardTheta": [
+          6.35982410808982,
+          9.98655206708285,
+          9.99008659028895,
+          9.27843961193785
+        ],
+        "optimizerObjective": 2.58171024457715,
+        "optimizerEvaluationCount": 673,
+        "optimizerIterationCount": 20,
+        "optimizerExitFlagGA": 0,
+        "optimizerExitFlagBFGS": 1,
+        "optimizerTerminationState": "{\"GA\":0,\"BFGS\":1}",
+        "optimizerTerminationAvailable": true,
+        "trainTimeSeconds": 5.9734501
+      }
+    ],
+    "canonicalVersusAudit": [
+      {
+        "repeat": 1,
+        "fitSeed": 5.7358581E+7,
+        "meanRMSE": 0.92095867778378571,
+        "meanMAE": 0.6994475412789638,
+        "meanMaximumAbsoluteDifference": 3.5139166271631552,
+        "meanCorrelation": 0.999723247891205,
+        "localHRMSE": 0.000599262996438743,
+        "localHRelativeDiscrepancy": 0.6681056303343027,
+        "localHCorrelation": 0.89432883484922288,
+        "localHMaximumAbsoluteDifference": 0.0041806828190345093,
+        "predictiveSDRMSE": 4.56958704964325,
+        "predictiveSDRelativeDiscrepancy": 0.518427133036962,
+        "predictiveSDCorrelation": 0.89430140279831472,
+        "predictiveSDMaximumAbsoluteDifference": 11.332329089251088
+      },
+      {
+        "repeat": 2,
+        "fitSeed": 1.17229983E+8,
+        "meanRMSE": 0.92097411401523033,
+        "meanMAE": 0.69945268026500806,
+        "meanMaximumAbsoluteDifference": 3.5139567639941589,
+        "meanCorrelation": 0.999723238363063,
+        "localHRMSE": 0.0005994138773429339,
+        "localHRelativeDiscrepancy": 0.66841954500825029,
+        "localHCorrelation": 0.89432802826329516,
+        "localHMaximumAbsoluteDifference": 0.0041811296340524195,
+        "predictiveSDRMSE": 0.84032261837547118,
+        "predictiveSDRelativeDiscrepancy": 0.17476105949606063,
+        "predictiveSDCorrelation": 0.8943020188886982,
+        "predictiveSDMaximumAbsoluteDifference": 2.60241510605288
+      },
+      {
+        "repeat": 3,
+        "fitSeed": 4.7393421E+7,
+        "meanRMSE": 0.92071415381795718,
+        "meanMAE": 0.69924658702637632,
+        "meanMaximumAbsoluteDifference": 3.5131870691301543,
+        "meanCorrelation": 0.99972339361283435,
+        "localHRMSE": 0.00059936230932620331,
+        "localHRelativeDiscrepancy": 0.66837027618794564,
+        "localHCorrelation": 0.89440576228541979,
+        "localHMaximumAbsoluteDifference": 0.0041805132579744823,
+        "predictiveSDRMSE": 0.67559963619547192,
+        "predictiveSDRelativeDiscrepancy": 0.16214674796993073,
+        "predictiveSDCorrelation": 0.894383107445555,
+        "predictiveSDMaximumAbsoluteDifference": 2.1381531067318429
+      },
+      {
+        "repeat": 4,
+        "fitSeed": 2.57608533E+8,
+        "meanRMSE": 0.92079316654802978,
+        "meanMAE": 0.69931764935204732,
+        "meanMaximumAbsoluteDifference": 3.5134128306881536,
+        "meanCorrelation": 0.99972334680788544,
+        "localHRMSE": 0.00059914882142125564,
+        "localHRelativeDiscrepancy": 0.66790340830491524,
+        "localHCorrelation": 0.894377388581284,
+        "localHMaximumAbsoluteDifference": 0.0041799447654353172,
+        "predictiveSDRMSE": 1.9702784582011246,
+        "predictiveSDRelativeDiscrepancy": 0.3204553906224849,
+        "predictiveSDCorrelation": 0.89435198729227594,
+        "predictiveSDMaximumAbsoluteDifference": 5.4819627568362854
+      },
+      {
+        "repeat": 5,
+        "fitSeed": 2.21754153E+8,
+        "meanRMSE": 0.92081671818336,
+        "meanMAE": 0.69933214951863465,
+        "meanMaximumAbsoluteDifference": 3.513529993869156,
+        "meanCorrelation": 0.99972333246886125,
+        "localHRMSE": 0.00059927089342896075,
+        "localHRelativeDiscrepancy": 0.66815528599716767,
+        "localHCorrelation": 0.89437348556034513,
+        "localHMaximumAbsoluteDifference": 0.0041803389912231205,
+        "predictiveSDRMSE": 2.1987991079334752,
+        "predictiveSDRelativeDiscrepancy": 0.34412823908683532,
+        "predictiveSDCorrelation": 0.89434836950741992,
+        "predictiveSDMaximumAbsoluteDifference": 6.0112958629281863
+      }
+    ],
+    "auditPairwise": {
+      "meanRMSEMedian": 0.00033969369838777948,
+      "meanRMSEMaximum": 0.00061804137144514911,
+      "localHRMSEMedian": 1.6290620258920894E-7,
+      "localHRMSEMaximum": 3.1997391277836719E-7,
+      "predictiveSDRMSEMedian": 2.1023294119529874,
+      "predictiveSDRMSEMaximum": 4.6477347145528185,
+      "meanMaximumAbsoluteDifference": 0.0025509418340021739,
+      "localHMaximumAbsoluteDifference": 1.3231074073847583E-6,
+      "predictiveSDMaximumAbsoluteDifference": 10.451377288680568
+    },
+    "canonicalVersusEnsemble": {
+      "meanSurface": {
+        "versusEnsembleMeanRMSE": 0.92085134088596832,
+        "versusEnsembleMeanMAE": 0.699359321488207,
+        "versusEnsembleMeanMaximumAbsoluteDifference": 3.5136006569689613,
+        "versusEnsembleMeanCorrelation": 0.99972331184710916,
+        "versusEnsembleMedianRMSE": 0.92082507268625913,
+        "versusEnsembleMedianMAE": 0.69933962721440079,
+        "versusEnsembleMedianMaximumAbsoluteDifference": 3.513529993869156,
+        "versusEnsembleMedianCorrelation": 0.99972332743154912
+      },
+      "localHSurface": {
+        "versusEnsembleMeanRMSE": 0.00059929177232417039,
+        "versusEnsembleMeanMAE": 0.0004203585184993819,
+        "versusEnsembleMeanMaximumAbsoluteDifference": 0.00418052189354397,
+        "versusEnsembleMeanCorrelation": 0.89436270460429568,
+        "versusEnsembleMedianRMSE": 0.00059928190347697695,
+        "versusEnsembleMedianMAE": 0.00042035008228390148,
+        "versusEnsembleMedianMaximumAbsoluteDifference": 0.0041805132579744823,
+        "versusEnsembleMedianCorrelation": 0.89436625499812594
+      },
+      "predictiveSDSurface": {
+        "versusEnsembleMeanRMSE": 1.8924274532318357,
+        "versusEnsembleMeanMAE": 1.6342260262431281,
+        "versusEnsembleMeanMaximumAbsoluteDifference": 5.3002503045450116,
+        "versusEnsembleMeanCorrelation": 0.89433288057835769,
+        "versusEnsembleMedianRMSE": 1.9702784582011246,
+        "versusEnsembleMedianMAE": 1.7105996191243049,
+        "versusEnsembleMedianMaximumAbsoluteDifference": 5.4819627568362854,
+        "versusEnsembleMedianCorrelation": 0.89435198729227594
+      },
+      "meanEnvelope": {
+        "fractionOutside": 1,
+        "RMSEOutside": 0.92061251165102187,
+        "maximumDistanceOutside": 3.5131870691301543,
+        "minimumAuditValue": 38.6759122883605,
+        "maximumAuditValue": 217.112750824656
+      },
+      "localHEnvelope": {
+        "fractionOutside": 0.998046875,
+        "RMSEOutside": 0.00059914374591808338,
+        "maximumDistanceOutside": 0.0041799447654353172,
+        "minimumAuditValue": 6.0819390411833045E-5,
+        "maximumAuditValue": 0.0035931223970046239
+      },
+      "predictiveSDEnvelope": {
+        "fractionOutside": 0.423828125,
+        "RMSEOutside": 0.35632438407442846,
+        "maximumDistanceOutside": 1.7262790795206859,
+        "minimumAuditValue": 1.21966682607408,
+        "maximumAuditValue": 19.8234335424661
+      }
+    },
+    "representativeMedoid": {
+      "policy": "minimize_sum_over_other_fits_of_RMSE_mean/median_pairwise_RMSE_mean_plus_RMSE_local_h/median_pairwise_RMSE_local_h;_ties_resolved_by_smallest_fit_seed",
+      "meanScale": 0.00033969369838777948,
+      "localHScale": 1.6290620258920894E-7,
+      "scores": [
+        8.6151649995593811,
+        9.1899258000029231,
+        10.570395947223313,
+        9.1244319419777717,
+        6.6951379063555851
+      ],
+      "selectedRepeat": 5,
+      "selectedSeed": 2.21754153E+8
+    }
+  },
+  "review_warning": "Resolved: the old canonical output-6 child occupied a distinct HGA mode. The reviewed deterministic policy selects the truth-free mean/local-h medoid (seed 221754153); the one-child reproduction matches the saved audit fit and no external numerical evidence was used.",
+  "external_numerical_evaluations": 0,
+  "s03_started": false,
+  "final_kernel_frozen": true,
+  "final_calibration_parameters_frozen": true,
+  "clean_baseline_requirement": "The existing audit-time S02 artifact and receipt remain immutable. The next audit-off clean S01-S03 run materializes the selected seed through the public canonical trainer before external evaluation."
+}

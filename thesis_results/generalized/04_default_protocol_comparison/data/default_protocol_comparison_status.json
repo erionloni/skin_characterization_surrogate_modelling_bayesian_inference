@@ -1,0 +1,19 @@
+{
+  "schema_version": "default_protocol_cross_route_status_v2",
+  "status": "completed_compatible_reference",
+  "compatibility_status": "COMPATIBLE_REFERENCE",
+  "provenance_source": "author statement: same COMSOL model",
+  "variance_formula_version": "tempered_local_diagonal_v1",
+  "eligible_reference_count": 306,
+  "primary_external_slice_count": 306,
+  "primary_external_scalar_count": 1836,
+  "fixed_reference_outputs_loaded": true,
+  "reason": "Fixed COMSOL truths were evaluated at the configured default protocol; fixed-route GP predictions were not used.",
+  "fixed_reference_used_for_training": false,
+  "fixed_reference_used_for_model_selection": false,
+  "fixed_route_GP_loaded_or_evaluated": false,
+  "generalized_models_refitted": false,
+  "uncertainty_semantics": "tempered_local_diagonal_calibrated_emulator_variance",
+  "raw_uqlab_uncertainty_retained_as_reference": true,
+  "evidence_scope": "development_only_default_protocol_cross_route_validation"
+}

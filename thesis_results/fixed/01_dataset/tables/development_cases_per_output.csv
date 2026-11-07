@@ -1,0 +1,7 @@
+Output,ValidDevelopmentCount,CompleteContributorCount,PartialContributorCount,MissingDevelopmentCount
+pcl1_D2_mbar,355,245,110,36
+pcl2_D2_mbar,347,245,102,44
+pcl3_D2_mbar,346,245,101,45
+pcl1_D6_mbar,357,245,112,34
+pcl2_D6_mbar,341,245,96,50
+pcl3_D6_mbar,282,245,37,109

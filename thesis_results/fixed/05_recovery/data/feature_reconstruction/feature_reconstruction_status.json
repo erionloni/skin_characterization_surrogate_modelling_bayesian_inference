@@ -1,0 +1,53 @@
+{
+  "schema_version": "feature_reconstruction_status_v2",
+  "enabled": true,
+  "complete": true,
+  "expected_posterior_cells": 240,
+  "certified_posterior_cells": 216,
+  "valid_reconstruction_cells": 240,
+  "unavailable_or_invalid_cells": 0,
+  "posterior_gp_evaluation_passes": 24,
+  "posterior_gp_batch_evaluations": 456,
+  "surrogate_reference_source": "saved_S02_validation_prediction_table",
+  "surrogate_reference_artifact": "thesis_results/fixed/02_surrogates/data/assessment/surrogate_validation.mat",
+  "surrogate_truth_gp_evaluation_passes": 0,
+  "surrogate_truth_gp_batch_evaluations": 0,
+  "surrogate_reference_valid_rows": 2928,
+  "surrogate_reference_invalid_rows": 0,
+  "latent_response_semantics": "deterministic_GP_mean_at_each_retained_posterior_draw",
+  "gp_predictive_variance_sampled_in_latent_reconstruction": false,
+  "gp_uncertainty_role": "already_enters_certified_posterior_through_scenario_likelihood",
+  "measurement_noise_draws_added": false,
+  "posterior_draws_pooled": false,
+  "absolute_loss_point_estimator": "posterior_median",
+  "squared_loss_point_estimator": "posterior_mean",
+  "worst_feature_metric": "normalized_absolute_error_from_posterior_median",
+  "worst_feature_tie_break_policy": "lowest_canonical_feature_index",
+  "worst_feature_per_case_rows": 4320,
+  "worst_feature_frequency_rows": 1152,
+  "matched_cohorts": [
+    {
+      "Scenario": "measurement_plus_gp",
+      "ExpectedCaseCount": 20,
+      "IncludedCaseCount": 20,
+      "ExcludedCaseCount": 0,
+      "IncludedCaseIDs": "131,113,230,232,42,93,172,12,119,220,206,48,96,215,83,146,166,246,249,116",
+      "ExcludedCaseIDs": "",
+      "ExclusionReasons": ""
+    },
+    {
+      "Scenario": "gp_only",
+      "ExpectedCaseCount": 20,
+      "IncludedCaseCount": 20,
+      "ExcludedCaseCount": 0,
+      "IncludedCaseIDs": "131,113,230,232,42,93,172,12,119,220,206,48,96,215,83,146,166,246,249,116",
+      "ExcludedCaseIDs": "",
+      "ExclusionReasons": ""
+    }
+  ],
+  "mcmc_runs_performed": 0,
+  "likelihood_evaluations_performed": 0,
+  "surrogate_fits_performed": 0,
+  "conditional_inversions_performed": 0,
+  "scientific_interpretation_generated": false
+}

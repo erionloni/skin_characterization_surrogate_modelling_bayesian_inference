@@ -1,0 +1,5 @@
+ProtocolIndex,Protocol,ProtocolRole,ObjectiveID,ComparisonRole,SignedRate_kPa_s,RateMagnitude_kPa_s,Log10AbsRate,Hold_s,Pause_s
+"1","default","default","","","-0.40000000000000002","0.40000000000000002","-0.3979400086720376","30","12"
+"2","joint_focused","selected","joint_weak","selected_joint","-2","2","0.3010299956639812","27.5","15"
+"3","permeability_focused","selected","permeability","selected_permeability","-1.4997884186649117","1.4997884186649117","0.17602999566398123","27.5","15"
+"4","dissipation_focused","selected","dissipation","selected_dissipation","-2","2","0.3010299956639812","40.625","12.5"
